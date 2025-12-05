@@ -1,5 +1,6 @@
 package com.luciana.task.ui
 
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,7 +14,6 @@ import com.luciana.task.data.model.Status
 import com.luciana.task.data.model.Task
 import com.luciana.task.databinding.FragmentTodoBinding
 import com.luciana.task.ui.adapter.TaskAdapter
-
 
 class TodoFragment : Fragment() {
 
@@ -79,7 +79,7 @@ class TodoFragment : Fragment() {
             Task("3", "Implementar painel de controle para ongs acompanharem doações recebidas", Status.TODO),
             Task("4", "Aplicar testes automatizados para validar fluxos críticos e prevenir vulnerabilidades", Status.TODO),
         )
-            taskAdapter.submitList(taskList)
+        taskAdapter.submitList(taskList)
     }
 
     override fun onDestroyView() {
