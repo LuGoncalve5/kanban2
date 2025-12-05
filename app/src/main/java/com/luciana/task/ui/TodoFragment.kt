@@ -14,7 +14,6 @@ import com.luciana.task.data.model.Task
 import com.luciana.task.databinding.FragmentTodoBinding
 import com.luciana.task.ui.adapter.TaskAdapter
 
-
 class TodoFragment : Fragment() {
 
     private var _binding: FragmentTodoBinding? = null
@@ -79,7 +78,7 @@ class TodoFragment : Fragment() {
             Task("3", "Implementar painel de controle para ongs acompanharem doações recebidas", Status.TODO),
             Task("4", "Aplicar testes automatizados para validar fluxos críticos e prevenir vulnerabilidades", Status.TODO),
         )
-            taskAdapter.submitList(taskList)
+        taskAdapter.submitList(taskList)
     }
 
     override fun onDestroyView() {

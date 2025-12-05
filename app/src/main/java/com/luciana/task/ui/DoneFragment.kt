@@ -78,7 +78,7 @@ class DoneFragment : Fragment() {
             Task("3", "Ajustes no design e funcionalidades a partir do feedback", Status.DONE),
             Task("4", "Planejamento da estratégia de lançamento do reuse", Status.DONE),
         )
-            taskAdapter.submitList(taskList)
+        taskAdapter.submitList(taskList)
     }
 
     override fun onDestroyView() {

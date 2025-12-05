@@ -80,7 +80,7 @@ class DoingFragment : Fragment() {
             Task("3", "Implementação de sistema de avaliações e comentários de usuários", Status.DOING),
             Task("4", "Otimização do tempo de carregamento das imagens no catálogo de roupas", Status.DOING),
         )
-            taskAdapter.submitList(taskList)
+        taskAdapter.submitList(taskList)
     }
 
     override fun onDestroyView() {
